@@ -66,6 +66,7 @@ def get_password():
 def log_in_func():
     login = input('Enter your login  ')
     password = input('enter your password ')
+    password = input('enter your password ')
     return password, login
 
 
