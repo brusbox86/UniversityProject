@@ -48,8 +48,8 @@ class DataBase:
         sql = f"SELECT password FROM users WHERE login = {login}"
         self.cursors.execute(sql)
         data = self.cursors.fetchall()
-        if data = password:
-            print('Welcome') and return True
+        if data == password:
+            print('Welcome')
         else:
             print('Incorrect password or login')
 
@@ -61,12 +61,13 @@ def reg_func():
 
 def get_password():
     password = input('enter your password ')
+    print(1)
     return password
 
 def log_in_func():
     login = input('Enter your login  ')
     password = input('enter your password ')
-    return password, login
+    DataBase().checkUserdata(login, password)
 
 
 def reg_or_log_in_menu():         #1 function
