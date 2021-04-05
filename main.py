@@ -62,6 +62,7 @@ def reg_func():
 def get_password():
     password = input('enter your password ')
     print(1)
+    print(1)
     return password
 
 def log_in_func():
